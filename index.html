@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Odemeter CSS -->
+    <link rel="stylesheet" href="css/odometer.css" type="text/css">
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <title>Price Counter</title>
+  </head>
+
+  <body onload="load()">
+
+    <!-- header -->
+    <header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container text-white text-center">
+          <h1 class="display-4 font-weight-bold">Price Calculator</h1>
+          <p class="lead">Simply select which services you want and a price will be calculated for you!</p>
+        </div>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <!-- main content -->
+    <main>
+
+      <div class="main-content mx-auto">
+
+        <h2 class="text-center mt-5">Total Price: &pound;<span id="price" class="odometer"></span></h2>
+
+        <h5 id="services-list" class="text-center mb-5"></h5>
+
+        <div class="alert alert-info alert-dismissible fade show mb-5" role="alert">
+          <strong>Info:</strong> Simply click on a service to select it. You can select multiple services at the same time, and can send an email with your chosen services at the bottom of the page.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="container-fluid">
+          <div id="price-cont" class="row d-flex justify-content-around flex-wrap">
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 1</span> &nbsp;<span class="badge badge-success">New!</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;20
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 2</span> &nbsp;<span class="badge badge-danger">Hot!</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;50
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 3</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;100
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 4</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;250
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 5</span> &nbsp;<span class="badge badge-warning">Popular!</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;400
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 6</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;500
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 7</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;600
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 8</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;700
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card mb-4">
+                <div class="card-body">
+
+                  <h5 class="card-title"><span class="service-title">Service 9</span> &nbsp;<span class="badge badge-info">Informative!</span></h5>
+
+                  <p class="card-text">
+                    <strong>Cost:</strong> &pound;750
+                  </p>
+
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button id="enquireBtn" type="button" class="btn btn-info btn-lg mt-3">Ask About Your Services</button>
+          <p id="warningBtn" class="my-1 text-danger invisible">Please select at least 1 service to ask about</p>
+        </div>
+
+      </div>
+
+    </main>
+    <!-- /.main content -->
+
+    <!-- footer -->
+    <footer class="page-footer">
+
+      <!-- Copyright -->
+      <div class="text-center text-white py-3 mt-4">&copy; 2018
+        <a class="text-white" href="https://karlchelton.co.uk/"> Karl Chelton</a>
+      </div>
+      <!-- Copyright -->
+
+
+    </footer>
+    <!-- /.footer -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Odemeter JS, then counter JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/odometer.min.js"></script>
+    <script type="text/javascript" src="js/counter.js"></script>
+  </body>
+</html>
