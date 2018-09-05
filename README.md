@@ -4,4 +4,4 @@ A simple program that allows you to set names and prices of services in HTML, wh
 
 Created using Bootstrap, JavaScript, HTML, Sass, OdometerJS and jQuery.
 
-:)
+https://karlchelton.co.uk/
